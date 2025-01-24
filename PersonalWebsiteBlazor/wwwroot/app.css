@@ -1,7 +1,3 @@
-
-
-
-
 /*Rules for certain items in the application
     
     Colors: 
@@ -15,8 +11,8 @@
 
 /* Base styles for the app */
 
-
-body {
+html,body {
+    height:100%; 
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -73,45 +69,6 @@ button {
     button:hover {
         background-color: #C0C0C0;
     }
-
-/* Utility classes */
-.text-center {
-    text-align: center;
-}
-
-.mt-2 {
-    margin-top: 8px;
-}
-
-.mt-4 {
-    margin-top: 16px;
-}
-
-.mb-2 {
-    margin-bottom: 8px;
-}
-
-.mb-4 {
-    margin-bottom: 16px;
-}
-
-.p-4 {
-    padding: 16px;
-}
-
-
-
-/*Rules for certain items in the application
-    
-    Colors: 
-    Dark Blue: #3D72A4; 
-    White: #FFFFFF; 
-    Black: #000000; 
-    Gray: #C0C0C0;
-
-
-*/
-
 
 /* Navbar styles */
 .navbar {
@@ -179,5 +136,88 @@ section h1 {
 
     .navbar-links li {
         margin: 8px 0;
+    }
+}
+
+/* Footer Styling */
+
+.footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer a {
+    color: #C0C0C0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-website {
+    font-size: 22px;
+}
+
+.footer a:hover {
+    color: #3D72A4;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px 0;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section .social-icons a {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 5px;
+    color: #FFFFFF;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
     }
 }
