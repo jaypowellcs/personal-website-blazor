@@ -278,3 +278,135 @@ section h1 {
         gap: 20px; /* Maintain standard spacing */
     }
 }
+
+
+
+/*Rules for certain items in the application
+    
+    Colors: 
+    Dark Blue: #3D72A4; 
+    White: #FFFFFF; 
+    Black: #000000; 
+    Gray: #C0C0C0;
+
+
+*/
+
+
+/* Contact Page Styling */
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #C0C0C0;
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #C0C0C0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .contact-form button:hover {
+        background-color: #3D72A4;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+        .contact-container h1 {
+            font-size: 24px;
+        }
+
+        .contact-container p {
+            font-size: 14px;
+        }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+        .contact-container h1 {
+            font-size: 20px;
+        }
+
+        .contact-container p {
+            font-size: 12px;
+        }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+}
