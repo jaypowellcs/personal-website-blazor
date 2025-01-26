@@ -9,10 +9,15 @@
   <ItemGroup>
     <Content Remove="Components\Pages\Counter.razor" />
     <Content Remove="Components\Pages\Weather.razor" />
+    <Content Remove="wwwroot\Images\generic.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Images\" />
+    <None Include="wwwroot\Images\curbmount.png" />
+    <None Include="wwwroot\Images\generic.png" />
+    <None Include="wwwroot\Images\healthcare.png" />
+    <None Include="wwwroot\Images\hotel.png" />
+    <None Include="wwwroot\Images\rightathome.png" />
   </ItemGroup>
 
 </Project>

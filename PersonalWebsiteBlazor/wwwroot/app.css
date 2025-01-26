@@ -240,18 +240,22 @@ section h1 {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     overflow: hidden;
     text-align: center;
+    height: 300px;
+    width: 300px;
 }
 
 .card img {
-    width: 100%;
-    height: 100%;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-}
+    width: 275px; 
+    height:275px;
+    object-fit: contain; /* Keeps the aspect ratio while filling the area */
+    max-width: none; /* Override any intrinsic size limits */
+    max-height: none; /* Override any intrinsic size limits */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+ }
 
 .card:hover img {
-    width: 100%;
-    height: 100%;
+  
     opacity: 1
 }
 
