@@ -1,4 +1,4 @@
-/*Rules for certain items in the application
+﻿/*Rules for certain items in the application
     
     Colors: 
     Dark Blue: #3D72A4; 
@@ -316,20 +316,6 @@ section h1 {
     }
 }
 
-
-
-/*Rules for certain items in the application
-    
-    Colors: 
-    Dark Blue: #3D72A4; 
-    White: #FFFFFF; 
-    Black: #000000; 
-    Gray: #C0C0C0;
-
-
-*/
-
-
 /* Contact Page Styling */
 
 .contact-container {
@@ -393,9 +379,9 @@ section h1 {
     transition: background-color 0.3s ease;
 }
 
-    .contact-form button:hover {
-        background-color: #3D72A4;
-    }
+.contact-form button:hover {
+    background-color: #3D72A4;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -404,46 +390,125 @@ section h1 {
         padding: 15px;
     }
 
-        .contact-container h1 {
-            font-size: 24px;
-        }
+.contact-container h1 {
+    font-size: 24px;
+}
 
-        .contact-container p {
-            font-size: 14px;
-        }
+.contact-container p {
+    font-size: 14px;
+}
 
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 14px;
-        padding: 8px;
-    }
+.contact-form input,
+.contact-form textarea {
+    font-size: 14px;
+    padding: 8px;
+}
 
-    .contact-form button {
-        font-size: 16px;
-    }
+.contact-form button {
+    font-size: 16px;
+}
 }
 
 @media (max-width: 480px) {
-    .contact-container {
-        margin: 10px;
-        padding: 10px;
+.contact-container {
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-container h1 {
+    font-size: 20px;
+}
+
+.contact-container p {
+    font-size: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 12px;
+    padding: 6px;
+}
+
+.contact-form button {
+    font-size: 14px;
+}
+}
+
+/*Rules for certain items in the application
+    
+    Colors: 
+    Dark Blue: #3D72A4; 
+    White: #FFFFFF; 
+    Black: #000000; 
+    Gray: #C0C0C0;
+
+
+*/
+
+
+/* Project Styling */
+
+/* Intro Section */
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Technology Grid */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.tech-grid span {
+    background: #C0C0C0;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Screenshots Section */
+.image-placeholder {
+    background: #C0C0C0;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    max-height: 600px;
+    max-width: 600px;
+}
+
+/* Features & Improvements */
+.features ul li {
+    list-style: none; 
+}
+
+.improvements ul li {
+    list-style: none; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-container {
+        padding: 15px;
     }
 
-        .contact-container h1 {
-            font-size: 20px;
-        }
-
-        .contact-container p {
-            font-size: 12px;
-        }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 12px;
-        padding: 6px;
+    .tech-grid {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .contact-form button {
-        font-size: 14px;
+    .tech-grid span {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
     }
 }
